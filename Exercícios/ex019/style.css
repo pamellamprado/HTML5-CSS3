@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+
+/*
+    tudo o que em HTML for id = no CSS será # (pode existir APENAS um id por página de html)
+    tudo o que em HTML for class = no CSS será . (pode existir mais de uma class por página de html)
+*/
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+ background-image: linear-gradient(to bottom, #b0b0f0,  #0091ff, #eb1f8c);
+ height: 900px /* não sei se está certo como eu coloquei a altura, é só pq estsva ficando uma risca azul quando a tela estava inteira e o hight: 100%; */
+}
+
+h1 {
+    color: white;
+    background-color: rgba(180, 213, 243, 0.319);
+}
+
+h1#principal {
+    text-align:center;
+    background-color: rgba(255, 20, 145, 0.352);
+}
+
+h2 {
+    color: white;
+}
+
+.basico {
+    color: #04049f;
+}
+
+.intermediario {
+    color: #ff9900;
+}
+
+.avancado {
+    color: #18c418;
+    font-weight: 500;
+}
+
+.destaque {
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+    background-color: #eb1f8c;
+}

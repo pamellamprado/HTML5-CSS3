@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        div > p {
+            display: none;
+        }
+
+        div:hover > p {
+            display:block;
+            background-color: limegreen;
+            color: aliceblue;
+            text-align: center;
+            height: 50px;
+            width: 200px;
+        }
+
+        div:hover {
+            background-color: orangered;
+            color: white;
+            font-weight: bolder;
+            width: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+        Passe o mouse aqui
+        <p>Hello world!</p>
+    </div>
+    <p>Fim do Exemplo</p>
+</body>
+</html>
