@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        table {
+            width: 300px;
+            height: 500px;
+            border-collapse: collapse;
+        }
+
+        tr.linha {
+            background-color: lightblue;
+        }
+
+        td {
+            border: 1px solid black;
+            text-align: center;
+            vertical-align: top;
+        }
+        td.destaque {
+            font-weight: bold;
+            background-color: palevioletred;
+            color: white;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de tabelas simples</h1>
+    <!--
+        Hierarquia de tabelas simples
+        table (<table>) = tabela
+            table row (<tr>) = linha de tabela
+                table header (<th>) = cabeçalho de tabela
+                table data (<td>) = dado de tabela
+        
+        OBS: A coluna se forma conforme a quantidade de dados inseridos por linha
+    -->
+    <table>
+        <tr class="linha"> <!--Primeira linha-->
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr> <!--Segunda linha-->
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr class="linha"> <!--Terceira linha-->
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        <tr>
+            <td>A4</td>
+            <td>B4</td>
+            <td class="destaque">C4</td>
+        </tr>
+        <tr class="linha">
+            <td>A5</td>
+            <td>B5</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>A6</td>
+            <td></td>
+        </tr>
+        <tr class="linha">
+            <td>A7</td>
+        </tr>
+    </table>
+</body>
+</html>
