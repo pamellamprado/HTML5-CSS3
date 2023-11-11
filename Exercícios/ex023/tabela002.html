@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura semânticas de tabelas</title>
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    table {
+        font-family: 'Courier New', Courier, monospace;
+        width: 600px;
+        border-collapse: collapse;
+        position: relative;
+    }
+
+    thead > tr > th {
+        position: sticky;
+        top: 0;
+        background-color: brown;
+    }
+
+    td,th {
+        border: 1px solid black;
+        padding: 5px;
+        text-align: center;
+    }
+
+    thead, tfoot {
+        background-color: brown;
+        color: white;
+    }
+    caption {
+        background-color: brown;
+        color: white;
+        font-weight: bolder;
+        padding: 5px;
+    }
+    
+    tbody > tr:nth-child(2n) {
+        background-color: #c384842a;
+    }
+</style>
+<body>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+
+        Table
+            Caption
+                thead
+                    tr, td, th
+                tbody
+                    tr, td, th
+                tfoot
+                    tr, td, th
+        
+        Outra coisa, também deve-se colocar nos ths qual o tipo de título (scope) que ele é: col ou row
+    -->
+    <h1>Uso de tabelas com muitos dados/grandes tabelas</h1>
+    <table>
+        <caption>Os cinco estados mais populosos do Brasil</caption>
+        <thead>
+            <tr>
+                <th scope="col">Unidade federativa</th>
+                <th scope="col" style="width: 100px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td>44 411 238</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>20 538 718</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>16 054 524</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td>14 141 626</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td>11 444 380</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th scope="row">TOTAL</th>
+            <td><strong>106 590 486</strong></td>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ab corporis accusantium. Doloribus maxime architecto quas ab totam ea placeat fugit recusandae hic, nihil, cum ipsam voluptas aliquid in suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, cumque? At odit ut, obcaecati aliquid doloribus debitis perferendis in non commodi magni reprehenderit unde consectetur fugiat dignissimos modi omnis amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores libero soluta maiores saepe! Excepturi, reprehenderit? Quod officiis dignissimos excepturi laboriosam, incidunt numquam, non asperiores, corrupti odio quam error labore recusandae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo delectus nostrum soluta aut alias voluptatibus sequi veritatis, magni provident officiis, aliquam fugiat corporis voluptatum ea cupiditate adipisci tenetur? Fugiat, eaque! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi magnam assumenda maiores iure rerum veniam cumque, atque eos neque odio aliquid et dolor nihil aut, ea harum eius minus quos.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ab corporis accusantium. Doloribus maxime architecto quas ab totam ea placeat fugit recusandae hic, nihil, cum ipsam voluptas aliquid in suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, cumque? At odit ut, obcaecati aliquid doloribus debitis perferendis in non commodi magni reprehenderit unde consectetur fugiat dignissimos modi omnis amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores libero soluta maiores saepe! Excepturi, reprehenderit? Quod officiis dignissimos excepturi laboriosam, incidunt numquam, non asperiores, corrupti odio quam error labore recusandae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo delectus nostrum soluta aut alias voluptatibus sequi veritatis, magni provident officiis, aliquam fugiat corporis voluptatum ea cupiditate adipisci tenetur? Fugiat, eaque! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi magnam assumenda maiores iure rerum veniam cumque, atque eos neque odio aliquid et dolor nihil aut, ea harum eius minus quos.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ab corporis accusantium. Doloribus maxime architecto quas ab totam ea placeat fugit recusandae hic, nihil, cum ipsam voluptas aliquid in suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, cumque? At odit ut, obcaecati aliquid doloribus debitis perferendis in non commodi magni reprehenderit unde consectetur fugiat dignissimos modi omnis amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores libero soluta maiores saepe! Excepturi, reprehenderit? Quod officiis dignissimos excepturi laboriosam, incidunt numquam, non asperiores, corrupti odio quam error labore recusandae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo delectus nostrum soluta aut alias voluptatibus sequi veritatis, magni provident officiis, aliquam fugiat corporis voluptatum ea cupiditate adipisci tenetur? Fugiat, eaque! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi magnam assumenda maiores iure rerum veniam cumque, atque eos neque odio aliquid et dolor nihil aut, ea harum eius minus quos.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ab corporis accusantium. Doloribus maxime architecto quas ab totam ea placeat fugit recusandae hic, nihil, cum ipsam voluptas aliquid in suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, cumque? At odit ut, obcaecati aliquid doloribus debitis perferendis in non commodi magni reprehenderit unde consectetur fugiat dignissimos modi omnis amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores libero soluta maiores saepe! Excepturi, reprehenderit? Quod officiis dignissimos excepturi laboriosam, incidunt numquam, non asperiores, corrupti odio quam error labore recusandae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo delectus nostrum soluta aut alias voluptatibus sequi veritatis, magni provident officiis, aliquam fugiat corporis voluptatum ea cupiditate adipisci tenetur? Fugiat, eaque! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi magnam assumenda maiores iure rerum veniam cumque, atque eos neque odio aliquid et dolor nihil aut, ea harum eius minus quos.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ab corporis accusantium. Doloribus maxime architecto quas ab totam ea placeat fugit recusandae hic, nihil, cum ipsam voluptas aliquid in suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, cumque? At odit ut, obcaecati aliquid doloribus debitis perferendis in non commodi magni reprehenderit unde consectetur fugiat dignissimos modi omnis amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores libero soluta maiores saepe! Excepturi, reprehenderit? Quod officiis dignissimos excepturi laboriosam, incidunt numquam, non asperiores, corrupti odio quam error labore recusandae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo delectus nostrum soluta aut alias voluptatibus sequi veritatis, magni provident officiis, aliquam fugiat corporis voluptatum ea cupiditate adipisci tenetur? Fugiat, eaque! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi magnam assumenda maiores iure rerum veniam cumque, atque eos neque odio aliquid et dolor nihil aut, ea harum eius minus quos.</p>
+
+
+</body>
+</html>
