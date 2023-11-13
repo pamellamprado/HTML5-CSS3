@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas com colgroups</title>
+    <style>
+        
+        table {
+            width: 600px;
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        td,th, caption {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        caption {
+            border-bottom: 0px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exercício de tabela</h1>
+    <table>
+        <caption>Cadastro</caption>
+        <colgroup>
+            <col style="background-color: lightgreen;">
+            <col>
+            <col>
+            <col>
+            <col style="background-color: aqua;">
+        </colgroup>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Gênero</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+            <td> lorem </td>
+        </tr>
+        <tr>
+            <td >Ana Maria Luiza</td>
+            <td>Feminino</td>
+            <td>27 anos</td>
+            <td colspan="2">Desenvolvedora</td>
+            
+        </tr>
+        <tr>
+            <td colspan="2">Sebastião Borges da Silva </td>
+            <td>Masculino</td>
+            <td>32 anos</td>
+            <td>Engenheiro civil</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Maria Clara Souza</td>
+            <td>Feminino</td>
+            <td>23 anos</td>
+            <td>Estudante</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Luiza Silva</td>
+            <td>Não-binário</td>
+            <td>28 anos</td>
+            <td>Professora</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Pedro Luiz da Cunha</td>
+            <td>Masculino</td>
+            <td>38 anos</td>
+            <td>Enfermeiro</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Antônio de Barros</td>
+            <td>Masculino</td>
+            <td>45 anos </td>
+            <td>Polícial</td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>
