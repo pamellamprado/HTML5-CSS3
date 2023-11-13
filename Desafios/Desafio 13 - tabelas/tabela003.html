@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio de tabelas</title>
+    <style>
+        
+        table {
+            width: 600px;
+            border-collapse: collapse;
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+        }
+
+        thead {
+            background-color: grey;
+            color: white;
+            position: sticky;
+            top: 0;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        th.media , td.media {
+            background-color: grey;
+            color: white;
+            text-align: left;
+        }
+
+        td.num {
+            text-align: center;
+        }
+
+        td#num {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col" rowspan="2">Área</th>
+                <th scope="col" rowspan="2">Disciplinas</th>
+                <th scope="colgroup" colspan="2">Notas</th>
+                <th scope="col" rowspan="2">Média</th>
+            </tr>
+            <tr>
+                <th scope="col" >Nota 01</th>
+                <th scope="col">Nota 02</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <th scope="rowgroup" rowspan="4">Exatas</th>
+                <td>Matemática</td>
+                <td class="num">00</td>
+                <td class="num">00</td>
+                <td class="num">00</td>
+            </tr>
+                <td>Física</td>
+                <td class="num">00</td>
+                <td class="num">00</td>
+                <td class="num">00</td>
+            </tr>
+            <tr>
+
+                <td>Química</td>
+                <td class="num">00</td>
+                <td class="num">00</td>
+                <td class="num">00</td>
+            </tr>
+            <tr>
+
+                <td>Biologia</td>
+                <td class="num">00</td>
+                <td class="num">00</td>
+                <td class="num">00</td>
+            </tr>
+            <tr>
+                <th scope="row" colspan="4" class="media">Média de Exatas</th>
+                <td class="media" id="num"" >0.0</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" rowspan="2">Humanas</th>
+                <td>História</td>
+                <td class="num">00</td>
+                <td class="num">00</td>
+                <td class="num">00</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td class="num">00</td>
+                <td class="num">00</td>
+                <td class="num">00</td>
+            </tr>
+            <tr>
+                <th scope="row" colspan="4" class="media">Média de Humanas</th>
+                <td class="media" id="num">0.0</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, amet reprehenderit tenetur ullam illum quibusdam quaerat quas dolore ad tempore facere velit! Repellat et odit, labore laborum necessitatibus eveniet quis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore tempore harum corrupti, cupiditate aperiam a quo et nostrum vitae quibusdam, deleniti asperiores, recusandae doloremque incidunt quaerat natus perspiciatis minima aliquid. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa vel, et eveniet aspernatur quam soluta perferendis magnam excepturi non fugit dolorem placeat repellendus voluptate qui molestiae, odio ut consequatur architecto? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus architecto voluptate error eligendi incidunt molestias voluptatum. Perspiciatis dicta a incidunt commodi illo sed at ipsum quia dignissimos. Accusantium, iure consequuntur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro debitis laboriosam ut, itaque illo id temporibus omnis, illum quisquam dolorem eius exercitationem deleniti facilis? Explicabo maxime iste similique facilis possimus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa expedita earum aspernatur quibusdam dicta dolorum doloremque necessitatibus odit libero nam ducimus architecto sint iure suscipit, rem doloribus nostrum eos error!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, amet reprehenderit tenetur ullam illum quibusdam quaerat quas dolore ad tempore facere velit! Repellat et odit, labore laborum necessitatibus eveniet quis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore tempore harum corrupti, cupiditate aperiam a quo et nostrum vitae quibusdam, deleniti asperiores, recusandae doloremque incidunt quaerat natus perspiciatis minima aliquid. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa vel, et eveniet aspernatur quam soluta perferendis magnam excepturi non fugit dolorem placeat repellendus voluptate qui molestiae, odio ut consequatur architecto? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus architecto voluptate error eligendi incidunt molestias voluptatum. Perspiciatis dicta a incidunt commodi illo sed at ipsum quia dignissimos. Accusantium, iure consequuntur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro debitis laboriosam ut, itaque illo id temporibus omnis, illum quisquam dolorem eius exercitationem deleniti facilis? Explicabo maxime iste similique facilis possimus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa expedita earum aspernatur quibusdam dicta dolorum doloremque necessitatibus odit libero nam ducimus architecto sint iure suscipit, rem doloribus nostrum eos error!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, amet reprehenderit tenetur ullam illum quibusdam quaerat quas dolore ad tempore facere velit! Repellat et odit, labore laborum necessitatibus eveniet quis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore tempore harum corrupti, cupiditate aperiam a quo et nostrum vitae quibusdam, deleniti asperiores, recusandae doloremque incidunt quaerat natus perspiciatis minima aliquid. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa vel, et eveniet aspernatur quam soluta perferendis magnam excepturi non fugit dolorem placeat repellendus voluptate qui molestiae, odio ut consequatur architecto? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus architecto voluptate error eligendi incidunt molestias voluptatum. Perspiciatis dicta a incidunt commodi illo sed at ipsum quia dignissimos. Accusantium, iure consequuntur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro debitis laboriosam ut, itaque illo id temporibus omnis, illum quisquam dolorem eius exercitationem deleniti facilis? Explicabo maxime iste similique facilis possimus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa expedita earum aspernatur quibusdam dicta dolorum doloremque necessitatibus odit libero nam ducimus architecto sint iure suscipit, rem doloribus nostrum eos error!</p>
+</body>
+</html>
